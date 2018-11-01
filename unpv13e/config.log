@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 444 tasks, 1846 threads, 4 processors
-Load average: 2.41, Mach factor: 1.58
+Default processor set: 457 tasks, 1986 threads, 4 processors
+Load average: 2.38, Mach factor: 1.94
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -1385,8 +1385,8 @@ configure:6327: checking for gethostbyname_r
 configure:6377: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lresolv -lpthread  >&5
 Undefined symbols for architecture x86_64:
   "_gethostbyname_r", referenced from:
-      _main in conftest-a33c81.o
-      _f in conftest-a33c81.o
+      _main in conftest-1afafd.o
+      _f in conftest-1afafd.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:6380: $? = 1
@@ -1668,6 +1668,7 @@ on 192.168.0.103
 config.status:628: creating Makefile
 config.status:628: creating Make.defines
 config.status:731: creating config.h
+config.status:1008: config.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##
