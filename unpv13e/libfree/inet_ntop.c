@@ -41,8 +41,13 @@ static char rcsid[] = "$Id: inet_ntop.c,v 1.1.1.1 2002/11/14 03:33:35 fenner Exp
  * sizeof(int) < 4.  sizeof(int) > 4 is fine; all the world's not a VAX.
  */
 
+<<<<<<< HEAD
 static const char *inet_ntop4(const u_char *src, char *dst, socklen_t size);
 static const char *inet_ntop6(const u_char *src, char *dst, socklen_t size);
+=======
+static const char *inet_ntop4(const u_char *src, char *dst, socklen_t  size);
+static const char *inet_ntop6(const u_char *src, char *dst, socklen_t  size);
+>>>>>>> 1b721a62f2e4aad25726442ad92b4db0ce98032c
 
 /* char *
  * inet_ntop(af, src, dst, size)
@@ -57,7 +62,11 @@ inet_ntop(af, src, dst, size)
 	int af;
 	const void *src;
 	char *dst;
+<<<<<<< HEAD
 	socklen_t size;
+=======
+	socklen_t  size;
+>>>>>>> 1b721a62f2e4aad25726442ad92b4db0ce98032c
 {
 	switch (af) {
 	case AF_INET:
@@ -86,7 +95,11 @@ static const char *
 inet_ntop4(src, dst, size)
 	const u_char *src;
 	char *dst;
+<<<<<<< HEAD
 	socklen_t size;
+=======
+	socklen_t  size;
+>>>>>>> 1b721a62f2e4aad25726442ad92b4db0ce98032c
 {
 	static const char fmt[] = "%u.%u.%u.%u";
 	char tmp[sizeof "255.255.255.255"];
